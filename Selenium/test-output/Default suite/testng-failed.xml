@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumtasks.Brokenlinkstask1">
+      <class name="seleniumtasks.ScreenshotOnFailureTest">
         <methods>
-          <include name="main"/>
+          <include name="invalidLoginTest"/>
+          <include name="emptyFieldsTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- seleniumtasks.Brokenlinkstask1 -->
+      </class> <!-- seleniumtasks.ScreenshotOnFailureTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
